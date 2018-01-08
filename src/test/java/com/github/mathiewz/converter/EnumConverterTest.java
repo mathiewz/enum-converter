@@ -75,7 +75,7 @@ class EnumConverterTest {
         );
     }
 
-    @DisplayName("Static by getter")
+    @DisplayName("Instanced by getter")
     @ParameterizedTest(name = "Entry {0}")
     @EnumSource(TestEnum.class)
     void it_should_return_optionnal_containing_the_entry_when_there_is_corresponding_entry_by_value_via_instanced_converter(TestEnum entry){
